@@ -1,0 +1,130 @@
+@import "layout.css";
+@import "elements.css";
+@import "fonts.css";
+@import "colors.css";
+@import "card.css";
+@import "btn.css";
+
+#img-container {
+  grid-area: about;
+  justify-content: center;
+}
+
+#filters-wrapper {
+  border-bottom: 0.5px #ffb366 solid;
+  border-top: 0.5px #ffb366 solid;
+  display: flex;
+  height: 20%;
+  margin-top: 1.5%;
+}
+
+#filters-container {
+  width: 40em;
+}
+
+.filter {
+  background-color: transparent;
+  color: #ffb366;
+  border: none;
+  font-size: 1rem;
+  margin-right: 2%;
+}
+
+.clicked {
+  background-color: #ffb366;
+  color: #fff;
+  font-size: 1rem;
+  margin-right: 2%;
+  border: none;
+  padding: 0 1%;
+}
+
+#back-arrow {
+  width: 25%;
+  align-self: center;
+}
+
+#content {
+  grid-area: content;
+  justify-content: center;
+}
+
+#post-info-card {
+  background-color: rgb(245, 244, 244);
+  padding: 0.5%;
+  margin-bottom: 1%;
+}
+
+#post {
+  background-color: #fff;
+  padding: 5%;
+}
+
+#post-footer {
+  background-color: #fff;
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: auto;
+}
+
+#author-avatar {
+  color: #ffb366;
+  font-size: 7em;
+  margin: 0 3%;
+}
+
+#author-info {
+  justify-content: flex-start;
+}
+
+#post-footer h5 {
+  text-align: left;
+}
+
+.post-btns {
+  color: #ffb366;
+}
+
+/* For mobile  */
+@media (max-width: 450px) {
+  #back-arrow {
+    display: none;
+  }
+
+  #filters-wrapper {
+    justify-content: center;
+    height: 9em;
+    margin-top: 1.5em;
+  }
+
+  #img-container {
+    height: 20em;
+  }
+
+  #filters-container {
+    display: grid;
+    grid-template-columns: repeat(2, 7em);
+    grid-template-rows: auto;
+    grid-row-gap: 0.5em;
+    grid-column-gap: 1.5em;
+    justify-items: center;
+    width: auto;
+  }
+
+  #content {
+    margin-top: -13em;
+  }
+
+  #post-footer {
+    display: block;
+    padding-bottom: 0.5em;
+  }
+}
+
+/* For tablet */
+@media (max-width: 890px) and (min-width: 700px) {
+  #back-arrow {
+    display: none;
+  }
+}

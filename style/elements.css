@@ -1,0 +1,31 @@
+/* SHARED ELEMENTS */
+
+header {
+  grid-area: header;
+  background-color: #ffb366;
+  color: #fff;
+}
+
+h3,
+h4,
+h6 {
+  margin: 0;
+}
+
+h5 {
+  text-align: center;
+  margin: 0;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #ffb366;
+}
+
+#footer-content {
+  width: 5em;
+}
+
+.social-links {
+  color: #fff;
+}

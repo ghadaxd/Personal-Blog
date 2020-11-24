@@ -1,0 +1,130 @@
+@import "layout.css";
+@import "elements.css";
+@import "fonts.css";
+@import "colors.css";
+@import "card.css";
+@import "btn.css";
+
+/* MAIN */
+#logo-img {
+  background: url("../imgs/Ghaa'.png") no-repeat;
+  background-size: contain;
+  width: 10em;
+  height: 10em;
+  border: 1px #ff8000 solid;
+  border-radius: 50%;
+}
+
+#logo-sec {
+  margin-right: 3%;
+  padding: 3%;
+}
+
+#about-me {
+  grid-area: about;
+  justify-content: center;
+  background-color: #fff;
+}
+
+#filters-container {
+  grid-area: filters;
+  border-bottom: 0.5px #ffb366 solid;
+  border-top: 0.5px #ffb366 solid;
+}
+
+.filter {
+  background-color: transparent;
+  color: #ffb366;
+  border: none;
+  font-size: 1rem;
+  margin-right: 2%;
+}
+
+.clicked {
+  background-color: #ffb366;
+  color: #fff;
+  font-size: 1rem;
+  margin-right: 2%;
+  border: none;
+  padding: 0 1%;
+}
+
+#content {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5%;
+  justify-items: center;
+  padding-bottom: 3%;
+}
+
+.img-filter {
+  margin: 0;
+}
+
+.img-caption {
+  background-color: #fff;
+  height: 9.4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.img-title {
+  padding: 0 3%;
+}
+
+.post-btns-container {
+  border-top: 0.5px #ffb366 solid;
+  margin: 0;
+  padding-top: 2%;
+}
+
+.post-btns {
+  color: #ffb366;
+}
+
+/* For mobile  */
+@media (max-width: 450px) {
+  #about-me {
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  #filters-container {
+    display: grid;
+    grid-template-columns: repeat(2, 7em);
+    grid-template-rows: auto;
+    grid-row-gap: 0.5em;
+    grid-column-gap: 1.5em;
+    justify-items: center;
+  }
+
+  #content {
+    grid-template-columns: 18em;
+    grid-template-rows: auto;
+    grid-row-gap: 1.5em;
+    justify-content: center;
+  }
+}
+
+/* For tablet */
+@media (max-width: 890px) and (min-width: 700px) {
+  #content {
+    grid-template-columns: repeat(2, 18em);
+    grid-template-rows: auto;
+    grid-row-gap: 1.5em;
+    justify-content: center;
+  }
+}
+
+/* For desktop */
+@media (max-width: 1024px) and (min-width: 891px) {
+  #content {
+    grid-template-columns: repeat(2, 25em);
+    grid-template-rows: auto;
+    grid-row-gap: 1.5em;
+    justify-content: center;
+  }
+}
