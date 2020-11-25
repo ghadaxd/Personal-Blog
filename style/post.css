@@ -64,6 +64,12 @@ figure {
   flex-direction: column;
 }
 
+blockquote {
+  background-color: rgb(245, 244, 244);
+  padding: 0.5em;
+  border-left: 3px #666666 solid;
+}
+
 #post-footer {
   background-color: #fff;
   margin-top: 3%;
