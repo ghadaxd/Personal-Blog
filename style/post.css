@@ -60,6 +60,10 @@
   padding: 5%;
 }
 
+figure {
+  flex-direction: column;
+}
+
 #post-footer {
   background-color: #fff;
   margin-top: 3%;
@@ -120,11 +124,19 @@
     display: block;
     padding-bottom: 0.5em;
   }
+
+  #figure-img {
+    width: 100%;
+  }
 }
 
 /* For tablet */
 @media (max-width: 890px) and (min-width: 700px) {
   #back-arrow {
     display: none;
+  }
+
+  #figure-img {
+    width: 100%;
   }
 }
